@@ -34,7 +34,7 @@
 #include <linux/printk.h>
 #include <linux/list.h>
 #include <linux/ktime.h>
-#include <linux/stab.h>
+#include <linux/slab.h>
 
 MODULE_AUTHOR("Zherdiev Danylo <zerdevdanil430@gmail.com>");
 MODULE_DESCRIPTION("Hello, world in Linux Kernel Training");
