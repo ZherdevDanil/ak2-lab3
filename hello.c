@@ -54,10 +54,11 @@ static LIST_HEAD(my_list_head);
 static int __init hello_init(void)
 {
 	if (number_of_iterations == 0) {
-		printk(KERN_WARNING "You printed 0 iterations");
+		printk(KERN_WARNING "You printed 0 iterations\n");
 	} else if (number_of_iterations >= 5 && number_of_iterations <= 10) {
-		printk(KERN_WARNING "You printed between 5 and 10");
+		printk(KERN_WARNING "You printed between 5 and 10\n");
 	} else if (number_of_iterations > 10) {
+		printk(KERN_ERR "You printed number bigger than 10\n");
 		return -EINVAL;
 	}
 
